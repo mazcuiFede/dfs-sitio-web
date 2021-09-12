@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+:root {
+    --main-green: #39B54A;
+    --main-grey: #EBEBEB;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mb-auto, .my-auto {
+    margin-bottom: auto!important;
+}
+.mt-auto, .my-auto {
+    margin-top: auto!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-caption{
+    top: 7rem;
+    text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dfs-title,
+.MuiTypography-body1.dfs-title{
+    font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-grey {
+    background-color: var(--main-grey);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiButton-text.btn-deal,
+.MuiButton-text.btn-deal:hover {
+    background-color: var(--main-green);
+    color: #FFF
+}
+
+
+.title-2{
+    color: #FFF;
+    font-size: 1.5rem
+}
+
+.text-right{
+    text-align: right;
+}
+
+.h-100p{
+    height: 100px;
+
+}
+
+.btn-header-alto{
+    color: #000;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    border-radius: 0px;
+}
+
+.btn-header-alto:hover,
+.btn-header-alto:focus {
+    background-color: #0C64A1;
+    border-color: #0C64A1;
+    box-shadow: none;
 }
