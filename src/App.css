@@ -1,7 +1,15 @@
 :root {
     --main-green: #39B54A;
     --main-grey: #EBEBEB;
+    --title-grey: #efefef;
+    --light-blue: #0C64A1;
 }
+
+.ml-2,
+.MuiButtonBase-root.ml-2 {
+    margin-left: 10px;
+}
+
 
 .mb-auto, .my-auto {
     margin-bottom: auto!important;
@@ -45,7 +53,8 @@
 
 }
 
-.btn-header-alto{
+.btn-header-alto,
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto{
     color: #000;
     background-color: #f5f5f5;
     border-color: #f5f5f5;
@@ -53,8 +62,46 @@
 }
 
 .btn-header-alto:hover,
-.btn-header-alto:focus {
+.btn-header-alto:active,
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:hover,
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:active,
+li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
+{
     background-color: #0C64A1;
     border-color: #0C64A1;
     box-shadow: none;
+    color: #fff
+}
+
+
+.title{
+    background-color: var(--title-grey);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title .title__text{
+    padding: 40px;
+}
+
+.card-title-1,
+.MuiTypography-body1.card-title-1 {
+    color: var(--light-blue);
+    font-weight: bold;
+}
+
+.blue .MuiTypography-body1.card-title-1,
+.MuiPaper-root.blue,
+.blue .MuiButton-root {
+    background-color: var(--light-blue);
+    color: #fff;
+}
+
+div.css-e53awj-MuiStack-root{
+    display: inline;
+}
+
+.deal-footer{
+    background-color: #333333;
+    color: white;
 }

@@ -1,31 +1,23 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import minibar from '../../images/minibar.png'
 
-const useStyles = makeStyles({
-  root: {
-    display: "flex"
-  },
-});
-
-export default function SimpleCard(props) {
-  const { title, body, children, color } = props
+export default function TextCard(props) {
+  const { title, body, children, classes } = props
 
   return (
-    <Card className={color} >
+    <Card className={classes} >
       <CardActionArea>
         <CardContent>
           {
 
           title ? 
-            <Typography gutterBottom variant="h5" component="h2" paragraph={true}>
-              {title}
+            <Typography gutterBottom variant="h5" component="h2" paragraph={true} className="mt-4 mb-5">
+              <b>{title}</b><br />
+              <img src={minibar} alt="minibar"></img>
             </Typography>
           :
             <></>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import slider from '../../images/slider.jpg'
+import slider from '../../../images/slider.jpg'
 
 export default function ImageSlider () {
     return (

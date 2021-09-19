@@ -4,7 +4,7 @@ import { makeStyles, Typography, TextField, InputLabel, Input, TextareaAutosize 
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
-import minibar from '../../../images/minibar.png'
+import minibar from '../../../../images/minibar.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {

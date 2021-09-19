@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button } from '@material-ui/core'
-import minibar from '../../../images/minibar.png'
-import empresa from '../../../images/empresa.png'
+import minibar from '../../../../images/minibar.png'
+import empresa from '../../../../images/empresa.png'
 
 export const SobreNosotros = () => {
     return (
@@ -17,7 +17,7 @@ export const SobreNosotros = () => {
 
                     <Typography paragraph={true}>DFS acompaña a sus clientes a través de un asesoramiento financiero profesional, sólido y transparente, identificando las mejores oportunidades de inversión y financiamiento.</Typography>
 
-                    <Button>Conocé más</Button>
+                    <Button className="btn-deal">Conocé más</Button>
                 </Col>
 
             </Row>

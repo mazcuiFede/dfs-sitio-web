@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button, Divider } from '@material-ui/core'
-import logo from './../../../images/logo.png'
+import logo from './../../images/logo.png'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -10,15 +10,13 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 export const DealFooter = () => {
     return (
         <>
-            <Container fluid>
+            <Container fluid className="deal-footer">
                 <Row className="mt-5 pt-5 pb-5 pt-5 text-center" style={{"backgroundColor":"#0C64A1"}} >
                     <Col className="my-auto">
                         <Typography className="title-2">Si aún no eres cliente abra su cuenta de inversión <Button className="btn-deal ml-3">Abrir cuenta</Button></Typography>
-                        
                     </Col>
                 </Row>
-            </Container>
-            <Container>
+                <Container>
                 <Row className="mt-5 pb-5">
                     <Col xs={12} sm={3}>
                         <img src={logo} alt="logo" className="mb-3"/>
@@ -72,6 +70,7 @@ export const DealFooter = () => {
                         </a>
                     </Col>
                 </Row>
+                </Container>
             </Container>
         </>
     )

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button, Divider } from '@material-ui/core'
-import { ProductosCard } from '../../elements'
-import minibar from '../../../images/minibar.png'
+import { ProductosCard } from '../../../elements'
+import minibar from '../../../../images/minibar.png'
 
 export const NuestrosProductos = () => {
 

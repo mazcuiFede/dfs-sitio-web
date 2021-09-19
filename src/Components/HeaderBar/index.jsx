@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import { Container, Row, Col } from 'react-bootstrap'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { Button } from '@material-ui/core'
 import logo from '../../images/logo.png'
 import Slide from '@material-ui/core/Slide';
-import { Button } from 'react-bootstrap';
+import ButtonHeader from '../elements/ButtonHeader';
+import menuMock from '../../__mocks__/menu';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -42,15 +43,17 @@ export default function HeaderBar(props) {
           <Toolbar>
             <Container>
               <Row>
-                <Col>
+                <Col xs={4}>
                   <img src={logo} alt="" className="h-100p p-1" />
                 </Col>
-                <Col className="my-auto text-right">
-                  <Button className="h-100p btn-header-alto">Home</Button>
-                  <Button className="h-100p btn-header-alto">Servicios</Button>
-                  <Button className="h-100p btn-header-alto">Productos</Button>
-                  <Button className="h-100p btn-header-alto">Nosotros</Button>
-                  <Button className="h-100p btn-header-alto">Contacto</Button>
+                <Col className="my-auto text-right" xs={8}>
+                  {
+                    menuMock.map(x => {
+                      return <ButtonHeader title={x.title} subItems={x.subItems}/>
+                    })
+                  }
+                  <Button variant="outlined" color="primary" className="ml-2">Ingresar</Button>
+                  <Button className="btn-deal ml-2">Abrir Cuenta</Button>
                 </Col>
               </Row>
             </Container>
