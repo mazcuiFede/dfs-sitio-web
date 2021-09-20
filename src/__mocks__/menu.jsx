@@ -2,6 +2,7 @@
 const menuMock = [
     {
         title: "Home",
+        link: "/",
         subItems: [
             {
                 title: "",
@@ -11,6 +12,7 @@ const menuMock = [
     },
     {
         title: "Servicios",
+        link: "/servicios",
         subItems: [
             {
                 title: "Asesoramiento Personalizado",
@@ -40,6 +42,7 @@ const menuMock = [
     },
     {
         title: "Productos",
+        link: "/nuestrosproductos",
         subItems: [
             {
                 title: "",
@@ -49,6 +52,7 @@ const menuMock = [
     },
     {
         title: "Nosotros",
+        link: "/nosotros",
         subItems: [
             {
                 title: "",
@@ -58,6 +62,7 @@ const menuMock = [
     },
     {
         title: "Contacto",
+        link: "/#contacto",
         subItems: [
             {
                 title: "",

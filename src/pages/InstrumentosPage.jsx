@@ -1,8 +1,4 @@
 import React from 'react'
-import instrumentosPageMock from './../__mocks__/instrumentosPages'
-import { Title } from '../Components/elements/Title';
-import { Contacto } from '../Components/Home/Body/Contacto';
-import { Cards } from '../Components/NuestrosProductos/Cards'
 import { Typography } from '@material-ui/core';
 import { Container, Row, Col } from 'react-bootstrap'
 

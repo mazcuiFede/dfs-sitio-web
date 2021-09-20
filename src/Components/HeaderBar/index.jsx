@@ -10,6 +10,7 @@ import logo from '../../images/logo.png'
 import Slide from '@material-ui/core/Slide';
 import ButtonHeader from '../elements/ButtonHeader';
 import menuMock from '../../__mocks__/menu';
+import { Link } from "react-router-dom";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -49,11 +50,11 @@ export default function HeaderBar(props) {
                 <Col className="my-auto text-right" xs={8}>
                   {
                     menuMock.map(x => {
-                      return <ButtonHeader title={x.title} subItems={x.subItems}/>
+                      return <Link to={x.link}><ButtonHeader title={x.title} subItems={x.subItems}/></Link>
                     })
                   }
-                  <Button variant="outlined" color="primary" className="ml-2">Ingresar</Button>
-                  <Button className="btn-deal ml-2">Abrir Cuenta</Button>
+                  <Link><Button variant="outlined" color="primary" className="ml-2">Ingresar</Button></Link>
+                  <a href={"https://aperturadecuenta.dealfs.com.ar/"} target="_blank"><Button className="btn-deal ml-2">Abrir Cuenta</Button></a>
                 </Col>
               </Row>
             </Container>

@@ -6,6 +6,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import { Link } from "react-router-dom";
 
 export const DealFooter = () => {
     return (
@@ -13,7 +14,7 @@ export const DealFooter = () => {
             <Container fluid className="deal-footer">
                 <Row className="mt-5 pt-5 pb-5 pt-5 text-center" style={{"backgroundColor":"#0C64A1"}} >
                     <Col className="my-auto">
-                        <Typography className="title-2">Si aún no eres cliente abra su cuenta de inversión <Button className="btn-deal ml-3">Abrir cuenta</Button></Typography>
+                        <Typography className="title-2">Si aún no eres cliente abra su cuenta de inversión <Link to="https://aperturadecuenta.dealfs.com.ar/"> <Button className="btn-deal ml-3">Abrir cuenta</Button></Link></Typography>
                     </Col>
                 </Row>
                 <Container>

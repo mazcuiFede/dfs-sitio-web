@@ -17,19 +17,21 @@ function App() {
   return (
 
     <>
-      <HeaderBar></HeaderBar>
-      <div className="mt-5">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={HomePage}></Route>
-            <Route exact path="/nosotros" component={NosotrosPage}></Route>
-            <Route exact path="/nuestrosproductos" component={NuestrosProductosPage}></Route>
-            <Route exact path="/instrumentos/:descripcion" component={InstrumentosPage}></Route>
-          </Switch>
-        </Router>
-      </div>
+      <Router>
+        <HeaderBar></HeaderBar>
+          <div className="mt-5">
+          
+            <Switch>
+              <Route exact path="/" component={HomePage}></Route>
+              <Route exact path="/nosotros" component={NosotrosPage}></Route>
+              <Route exact path="/nuestrosproductos" component={NuestrosProductosPage}></Route>
+              <Route exact path="/instrumentos/:descripcion" component={InstrumentosPage}></Route>
+            </Switch>
+          
+          </div>
+        <DealFooter />
+      </Router>
 
-      <DealFooter />
 
     </>
 

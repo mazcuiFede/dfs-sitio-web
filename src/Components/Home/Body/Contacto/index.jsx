@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 export const Contacto = () => {
     const classes = useStyles();
     return (
-        <Container>
+        <Container id="contacto">
             <Row className="mt-5 pt-5 text-center">
                 <Col>
                     <Typography className="dfs-title" paragraph={true}>Contactese con nuestro equipo</Typography>
