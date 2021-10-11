@@ -19,11 +19,15 @@ export const Cards = () => {
             <Row>
                 {
                     instrumentosMock.map(x => 
-                        <Col xs={12} sm={4} className="mt-5 mb-5">
+                        <Col xs={12} sm={4} className="mt-5 mb-4">
                             <SimpleCard>
-                                <Typography paragraph={true} className="card-title-1">{x.title}</Typography>
-                                <Typography paragraph={true} className="card-body">{x.body}</Typography>
-                                <Button variant="outlined">Más Info</Button>
+                                
+                                <Typography paragraph={true} className="card-body">
+                                    <Typography className="card-title-1" paragraph="true">{x.title}</Typography>
+                                    {x.body}<br/>
+                                    <Button variant="outlined" className="mt-3">Más Info</Button>    
+                                </Typography>
+                                
                             </SimpleCard>
                         </Col>
                     )
@@ -59,9 +63,9 @@ export const Cards = () => {
                     familiaDeFondosMock.map(x => 
                         <Col xs={12} sm={6} className="mt-5 mb-5">
                             <SimpleCard color="blue">
-                                <Typography paragraph={true} className="card-title-1">{x.title}</Typography>
-                                <Typography paragraph={true} className="card-body">{x.body}</Typography>
-                                <Button variant="outlined">Más Info</Button>
+                                <Typography className="card-title-1" paragraph="true">{x.title}</Typography>
+                                {x.body}<br/>
+                                <Button variant="outlined" className="mt-3">Más Info</Button>    
                             </SimpleCard>
                         </Col>
                     )

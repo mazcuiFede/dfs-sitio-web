@@ -5,6 +5,8 @@ import { HomePage } from './pages/HomePage'
 import { NosotrosPage } from './pages/NosotrosPage'
 import { NuestrosProductosPage } from './pages/NuestrosProductosPage'
 import { InstrumentosPage} from './pages/InstrumentosPage'
+import { ServiciosPage } from './pages/ServiciosPage'
+
 
 import { BrowserRouter as Router,
   Switch,
@@ -26,6 +28,9 @@ function App() {
               <Route exact path="/nosotros" component={NosotrosPage}></Route>
               <Route exact path="/nuestrosproductos" component={NuestrosProductosPage}></Route>
               <Route exact path="/instrumentos/:descripcion" component={InstrumentosPage}></Route>
+
+              {/* Servicios */}
+              <Route exact path="/servicios/:servicio" component={ServiciosPage}></Route>
             </Switch>
           
           </div>

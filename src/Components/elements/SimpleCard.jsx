@@ -6,6 +6,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
@@ -15,16 +16,26 @@ const useStyles = makeStyles({
 });
 
 export default function SimpleCard(props) {
-  const { title, body, children, color } = props
+  const { title, body, children, color, icon } = props
 
   return (
     <Card className={color} >
       <CardActionArea>
         <CardContent>
           {
+            icon 
+            ? 
+              <Typography paragraph="true">
+                <ViewModuleIcon fontSize="large"/>
+              </Typography>
+            :
+            <></>
+          }
+          
+          {
 
-          title ? 
-            <Typography gutterBottom variant="h5" component="h2" paragraph={true}>
+            title ? 
+            <Typography gutterBottom variant="h5" component="h2" paragraph={true} className="card-title-1">
               {title}
             </Typography>
           :

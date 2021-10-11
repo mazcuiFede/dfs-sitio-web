@@ -12,7 +12,7 @@ const menuMock = [
     },
     {
         title: "Servicios",
-        link: "/servicios",
+        link: "/",
         subItems: [
             {
                 title: "Asesoramiento Personalizado",

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { makeStyles, Typography, TextField, InputLabel, Input, TextareaAutosize  } from '@material-ui/core'
+import { makeStyles, Typography, Button } from '@material-ui/core'
+import { Form, Field } from "react-final-form";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -15,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
+const onSubmit = async (values) => {
+    window.alert(JSON.stringify(values, 0, 2));
+};
 
 export const Contacto = () => {
     const classes = useStyles();
@@ -56,26 +60,38 @@ export const Contacto = () => {
                         
                 </Col>
                 <Col className="my-auto">
-                    <form className={classes.root} noValidate autoComplete="off">
+                <Form
+                    onSubmit={onSubmit}
+                    render={({ handleSubmit, values }) => (
+                    <form onSubmit={handleSubmit} autoComplete="off">
                         <Row>
                             <Col>
-                                <TextField id="nombre-basic" label="Nombre" variant="filled"  className="w-100"/>
+                                <Field id="nombre" placeholder="Nombre" component="input" name="nombre" variant="filled"  className="w-100 form-control"/>
                             </Col>
                             <Col>
-                                <TextField id="email" label="Email" variant="filled" className="w-100" />
+                                <Field id="email" placeholder="Email" component="input" name="email" variant="filled" className="w-100 form-control" />
+                            </Col>
+                        </Row>
+                        <Row className="pt-3">
+                            <Col>
+                                <Field id="titulo" placeholder="Título" component="input" name="title" variant="filled" className="w-100 form-control" />
+                            </Col>
+                        </Row>
+                        <Row className="pt-3">
+                            <Col>
+                                <Field id="mensaje" name="mensaje" component="input" placeholder="Mensaje" variant="filled" className="w-100 form-control" />
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                <TextField id="titulo" label="Título" variant="filled" className="w-100" />
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <TextField id="mensaje" label="Mensaje" variant="filled" className="w-100" />
+                            <Col className="text-center mt-3">
+                                <Button type="submit" className="btn-deal">
+                                    Submit
+                                </Button>
                             </Col>
                         </Row>
                     </form>
+                    )}
+                    />
                 </Col>
             </Row>
 

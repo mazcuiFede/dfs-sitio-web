@@ -5,6 +5,12 @@
     --light-blue: #0C64A1;
 }
 
+@media (min-width: 600px) {
+    .carousel-caption{
+        width: 35%;
+    }
+  }
+
 .ml-2,
 .MuiButtonBase-root.ml-2 {
     margin-left: 10px;
@@ -54,7 +60,8 @@
 }
 
 .btn-header-alto,
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto{
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto,
+.header a.inline button {
     color: #000;
     background-color: #f5f5f5;
     border-color: #f5f5f5;
@@ -67,16 +74,17 @@
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:active,
 li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
 {
-    background-color: #0C64A1;
-    border-color: #0C64A1;
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
     box-shadow: none;
     color: #fff
 }
 
+.bg-white li{
+    background-color: #f5f5f5
+}
 
 .title{
-    background-color: var(--title-grey);
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -97,7 +105,8 @@ li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
     color: #fff;
 }
 
-div.css-e53awj-MuiStack-root{
+div.css-e53awj-MuiStack-root,
+.header a.inline div {
     display: inline;
 }
 
@@ -106,6 +115,8 @@ div.css-e53awj-MuiStack-root{
     color: white;
 }
 
-.MuiToolbar-root a {
+.MuiToolbar-root a,
+a {
     text-decoration: none;
 }
+

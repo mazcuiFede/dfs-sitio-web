@@ -43,14 +43,14 @@ export default function HeaderBar(props) {
         <AppBar color="default">
           <Toolbar>
             <Container>
-              <Row>
+              <Row className="header">
                 <Col xs={4}>
                   <img src={logo} alt="" className="h-100p p-1" />
                 </Col>
                 <Col className="my-auto text-right" xs={8}>
                   {
                     menuMock.map(x => {
-                      return <Link to={x.link}><ButtonHeader title={x.title} subItems={x.subItems}/></Link>
+                      return <Link to={x.link} className="inline"><ButtonHeader title={x.title} subItems={x.subItems}/></Link>
                     })
                   }
                   <Link><Button variant="outlined" color="primary" className="ml-2">Ingresar</Button></Link>

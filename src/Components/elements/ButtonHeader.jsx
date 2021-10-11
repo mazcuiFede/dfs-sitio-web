@@ -86,7 +86,7 @@ export default function ButtonHeader(props) {
                             id="composition-menu"
                             aria-labelledby="composition-button"
                             onKeyDown={handleListKeyDown}
-                            className="my-auto"
+                            className="my-auto bg-white"
                         >
                             {
                                 subItems.map(x => {
