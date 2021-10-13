@@ -30,7 +30,7 @@ function App() {
               <Route exact path="/instrumentos/:descripcion" component={InstrumentosPage}></Route>
 
               {/* Servicios */}
-              <Route exact path="/servicios/:servicio" component={ServiciosPage}></Route>
+              <Route exact path="/servicios/:servicio" component={ServiciosPage} />
             </Switch>
           
           </div>

@@ -93,7 +93,9 @@ li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
 }
 
 .card-title-1,
-.MuiTypography-body1.card-title-1 {
+p.blue-text,
+.MuiTypography-body1.card-title-1,
+.blue-text th{
     color: var(--light-blue);
     font-weight: bold;
 }
@@ -120,3 +122,6 @@ a {
     text-decoration: none;
 }
 
+div.transparent{
+    background-color: transparent;
+}
