@@ -1,10 +1,14 @@
 import * as React from 'react';
 import { Table, TableBody, TableRow, TableCell, TableContainer, TableHead } from '@mui/material';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import {Link} from 'react-router-dom'
+import {Row} from 'react-bootstrap'
 
 export default function FondoDetalleTable ( props ) {
   const { data } = props
 
   return (
+    <Row>
     <TableContainer className="bg-grey mt-5">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -29,7 +33,9 @@ export default function FondoDetalleTable ( props ) {
               <TableCell>{ data.agenteAdministracion }</TableCell>
               <TableCell>{ data.agenteCustodia }</TableCell>
               <TableCell>
-                { data.linkInforme }
+              <Link to={ data.linkInforme }><PictureAsPdfIcon /></Link>
+                
+                
                 { data.linkRG }
               </TableCell>
 
@@ -40,5 +46,6 @@ export default function FondoDetalleTable ( props ) {
         </TableBody>
       </Table>
     </TableContainer>
+    </Row>
   );
 }

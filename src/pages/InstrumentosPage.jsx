@@ -20,7 +20,7 @@ export const InstrumentosPage = props => {
             <Container className="pt-5">
                 <Row>
                     <Col>
-                        <Typography><b>Productos</b>: Instrumentos de Inversión </Typography>
+                        <Typography><Link to={"/nuestrosproductos"}><b>Productos</b></Link>: Instrumentos de Inversión </Typography>
                     </Col>
                 </Row>
             </Container>    
@@ -36,7 +36,7 @@ export const InstrumentosPage = props => {
                 </Row>
                 <Row className="mt-5">
                     <Col className="text-center">
-                        <Link to="/#contacto"><Button className="btn-deal">Contactenos</Button></Link>
+                        <Link to="/contacto"><Button className="btn-deal">Contactenos</Button></Link>
                     </Col>
                 </Row>
             </Container>

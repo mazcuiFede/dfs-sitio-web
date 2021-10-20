@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import { Table, TableBody, TableRow, TableCell } from '@mui/material';
 import { Typography, Button } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link } from 'react-router-dom'
 
 export default function SimpleAccordion ( props ) {
   const { title, rows } = props
@@ -36,7 +37,9 @@ export default function SimpleAccordion ( props ) {
                         
                         
                         <TableCell><Typography>{x.descripcion}</Typography></TableCell>
-                        <TableCell><Button variant="outlined">Más info</Button></TableCell>
+                        <TableCell>
+                          <Link to={"/contacto"}><Button variant="outlined">Más info</Button> </Link>
+                        </TableCell>
                       </TableRow>
                     </>
                 )

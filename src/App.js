@@ -6,6 +6,7 @@ import { NosotrosPage } from './pages/NosotrosPage'
 import { NuestrosProductosPage } from './pages/NuestrosProductosPage'
 import { InstrumentosPage} from './pages/InstrumentosPage'
 import { ServiciosPage } from './pages/ServiciosPage'
+import { ContactoPage } from './pages/ContactoPage'
 
 
 import { BrowserRouter as Router,
@@ -13,6 +14,7 @@ import { BrowserRouter as Router,
   Route } from 'react-router-dom'
 
 import './App.css';
+import { ScrollToTop } from './Components/elements';
 
 function App() {
 
@@ -21,16 +23,15 @@ function App() {
     <>
       <Router>
         <HeaderBar></HeaderBar>
-          <div className="mt-5">
-          
+          <div className="mt-4">
+            <ScrollToTop />
             <Switch>
               <Route exact path="/" component={HomePage}></Route>
               <Route exact path="/nosotros" component={NosotrosPage}></Route>
               <Route exact path="/nuestrosproductos" component={NuestrosProductosPage}></Route>
               <Route exact path="/instrumentos/:descripcion" component={InstrumentosPage}></Route>
-
-              {/* Servicios */}
               <Route exact path="/servicios/:servicio" component={ServiciosPage} />
+              <Route exact path="/contacto" component={ContactoPage} />
             </Switch>
           
           </div>

@@ -10,27 +10,9 @@ import { Partners } from '../Components/Home/Body/Partners'
 import { SobreNosotros } from '../Components/Home/Body/SobreNosotros'
 import { Contacto } from '../Components/Home/Body/Contacto'
 
-export const HomePage = () => {
+export const ContactoPage = () => {
     return (
         <>
-            <ImageSlider />
-
-            <TradingViewTicker></TradingViewTicker>
-
-            <Body1></Body1>
-
-            <Servicios></Servicios>
-
-            <NuestrosProductos></NuestrosProductos>
-
-            <Beneficios />
-
-            <PorqueElegirnos />
-
-            <SobreNosotros />
-
-            <Partners />
-
             <Contacto />
         </>
     )

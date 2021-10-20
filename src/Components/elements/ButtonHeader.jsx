@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
 import LabelImportantIcon from '@mui/icons-material/LabelImportant';
-
+import {Link} from 'react-router-dom'
 
 export default function ButtonHeader(props) {
   const [open, setOpen] = React.useState(false);
@@ -86,11 +86,11 @@ export default function ButtonHeader(props) {
                             id="composition-menu"
                             aria-labelledby="composition-button"
                             onKeyDown={handleListKeyDown}
-                            className="my-auto bg-white"
+                            className="my-auto bg-white menu-subitem"
                         >
                             {
                                 subItems.map(x => {
-                                    return  <MenuItem onClick={handleClose}><LabelImportantIcon /> <span style={{marginLeft:"10px"}}>{x.title} </span></MenuItem>
+                                    return  <MenuItem onClick={handleClose}><Link to={x.link} className="menu-subitem"><LabelImportantIcon /> <span style={{marginLeft:"10px"}}>{x.title} </span></Link></MenuItem>
                                 })
                             }
                             

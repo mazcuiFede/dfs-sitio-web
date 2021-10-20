@@ -5,12 +5,13 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
+import {Row} from 'react-bootstrap'
 
 export default function FondoDescripcionTable(props) {
   const { data } = props
   
   return (
+    <Row>
     <TableContainer>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -46,5 +47,6 @@ export default function FondoDescripcionTable(props) {
         </TableBody>
       </Table>
     </TableContainer>
+    </Row>
   );
 }

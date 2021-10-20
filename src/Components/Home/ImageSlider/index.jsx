@@ -18,7 +18,7 @@ export default function ImageSlider () {
                 <Carousel.Caption>
                     <Typography variant="h2" paragraph="true">Potenciamos su Empresa</Typography>
                     <Typography variant="h5" paragraph="true">Establecemos el horizonte de inversión adecuado para resolver sus necesidades.</Typography>
-                    <Link to="/#contacto"><Button className="btn-deal mt-4">Contactenos</Button></Link>
+                    <Link to="/contacto"><Button className="btn-deal mt-4">Contactenos</Button></Link>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -7,6 +7,7 @@ import SimpleAccordion from './SimpleAccordion'
 import RentaFijaAccordion from './rentaFija/RentaFijaAccordion'
 import FondoDetalleTable from './rentaFija/FondoDetalleTable'
 import FondoDescripcionTable from './rentaFija/FondoDescripcionTable'
+import ScrollToTop from './ScrollToTop'
 
 export { 
     SimpleCard, 
@@ -17,5 +18,6 @@ export {
     ButtonHeader,
     RentaFijaAccordion,
     FondoDetalleTable,
-    FondoDescripcionTable
+    FondoDescripcionTable,
+    ScrollToTop
 };

@@ -50,10 +50,13 @@ export default function HeaderBar(props) {
                 <Col className="my-auto text-right" xs={8}>
                   {
                     menuMock.map(x => {
-                      return <Link to={x.link} className="inline"><ButtonHeader title={x.title} subItems={x.subItems}/></Link>
+                      if(x.link)
+                        return <Link to={x.link} className="inline"><ButtonHeader title={x.title} subItems={x.subItems}/></Link>
+                      else
+                        return <ButtonHeader title={x.title} subItems={x.subItems}/>
                     })
                   }
-                  <Link><Button variant="outlined" color="primary" className="ml-2">Ingresar</Button></Link>
+                  <Link to="/contacto"><Button variant="outlined" color="primary" className="ml-2">Ingresar</Button></Link>
                   <a href={"https://aperturadecuenta.dealfs.com.ar/"} target="_blank"><Button className="btn-deal ml-2">Abrir Cuenta</Button></a>
                 </Col>
               </Row>

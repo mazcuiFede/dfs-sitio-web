@@ -15,7 +15,7 @@ export const Body1 = () => {
             </Row>
             <Row className="mt-5 mb-5 text-center">
                 <Col>
-                    <img src={steps} alt="minibar"></img>
+                    <img src={steps} alt="steps"></img>
                 </Col>
             </Row>
         </Container>

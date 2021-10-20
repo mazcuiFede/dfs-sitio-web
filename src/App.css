@@ -38,6 +38,13 @@
     background-color: var(--main-grey);
 }
 
+.menu-subitem {
+    color: #000;
+}
+.menu-subitem li:hover a {
+    color: #fff
+}
+
 .MuiButton-text.btn-deal,
 .MuiButton-text.btn-deal:hover {
     background-color: var(--main-green);
@@ -114,6 +121,10 @@ div.css-e53awj-MuiStack-root,
 
 .deal-footer{
     background-color: #333333;
+    color: white;
+}
+
+.white{
     color: white;
 }
 
