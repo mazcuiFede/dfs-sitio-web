@@ -81,8 +81,8 @@
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:active,
 li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
 {
-    background-color: var(--light-blue);
-    border-color: var(--light-blue);
+    background-color: var(--light-blue) !important;
+    border-color: var(--light-blue) !important;
     box-shadow: none;
     color: #fff
 }

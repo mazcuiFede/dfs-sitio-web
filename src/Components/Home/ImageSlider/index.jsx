@@ -7,7 +7,7 @@ import { TextField } from '@mui/material'
 
 export default function ImageSlider () {
     return (
-        <Carousel>
+        <Carousel className="d-none d-sm-flex">
             <Carousel.Item>
                 <img
                     className="d-block w-100"

@@ -2,7 +2,9 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button, Divider } from '@material-ui/core'
 import { ProductosCard } from '../../../elements'
+import {Link} from 'react-router-dom'
 import minibar from '../../../../images/minibar.png'
+
 
 export const NuestrosProductos = () => {
 
@@ -17,28 +19,42 @@ export const NuestrosProductos = () => {
             
             <Row className="mt-5 mb-5 text-center">
                 <Col>
-                    <ProductosCard body="Cauciones"></ProductosCard>
+                    <Link to="/instrumentos/cauciones">
+                        <ProductosCard body="Cauciones"></ProductosCard>
+                    </Link>
                 </Col>
                 <Col>
-                    <ProductosCard body="Cheques de Pago Diferido"></ProductosCard>
+                    <Link to="/instrumentos/chpd">
+                        <ProductosCard body="Cheques de Pago Diferido"></ProductosCard>
+                    </Link>
                 </Col>
                 <Col>
-                    <ProductosCard body="Letras"></ProductosCard>
+                    <Link to="/instrumentos/letras">
+                        <ProductosCard body="Letras"></ProductosCard>
+                    </Link>
                 </Col>
                 <Col>
-                    <ProductosCard body="Bonos"></ProductosCard>
+                    <Link to="/instrumentos/bonos">
+                        <ProductosCard body="Bonos"></ProductosCard>
+                    </Link>
                 </Col>
             </Row>
 
             <Row className="mt-5 mb-5 text-center">
                 <Col>
-                    <ProductosCard body="Acciones"></ProductosCard>
+                    <Link to="/instrumentos/acciones">
+                        <ProductosCard body="Acciones"></ProductosCard>
+                    </Link>
                 </Col>
                 <Col>
-                    <ProductosCard body="Cedears"></ProductosCard>
+                    <Link to="/instrumentos/cedears">
+                        <ProductosCard body="Cedears"></ProductosCard>
+                    </Link>
                 </Col>
                 <Col>
-                    <ProductosCard body="Pagaré burstatil"></ProductosCard>
+                    <Link to="/instrumentos/pagare-bursatil">
+                        <ProductosCard body="Pagaré burstatil"></ProductosCard>
+                    </Link>
                 </Col>
             </Row>
 
@@ -53,7 +69,9 @@ export const NuestrosProductos = () => {
                     <ProductosCard body="Emisiones Primarias"></ProductosCard>
                 </Col>
                 <Col>
-                    <ProductosCard body="Fondos Comunes de Inversión"></ProductosCard>
+                    <Link to="/instrumentos/fci">
+                        <ProductosCard body="Fondos Comunes de Inversión"></ProductosCard>
+                    </Link>
                 </Col>
             </Row>
 

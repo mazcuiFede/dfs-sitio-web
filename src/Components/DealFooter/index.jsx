@@ -51,7 +51,7 @@ export const DealFooter = () => {
                         <Typography paragraph={true}>Contacto</Typography>
                         <ul>
                             <li>+54 11 5275 6390</li>
-                            <li>administracion@dealfs.com.ar</li>
+                            <li>contacto@dealfs.com.ar</li>
                         </ul>
                         <Divider />
                         <Typography paragraph={true}>

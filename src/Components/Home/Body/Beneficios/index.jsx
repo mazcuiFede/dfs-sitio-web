@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { Button } from '@material-ui/core'
 import { Title } from '../../../elements/Title'
 import { SimpleCard } from '../../../elements'
+import { Link } from 'react-router-dom'
 
 export const Beneficios = () => {
     return (
@@ -32,7 +33,9 @@ export const Beneficios = () => {
             </Row>
             <Row className="mt-5 mb-5 text-center">
                 <Col>
-                    <Button className="btn-deal">Contáctenos</Button>
+                    <Link to="/contacto">
+                        <Button className="btn-deal">Contáctenos</Button>
+                    </Link>
                 </Col>
             </Row>
         </Container>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { makeStyles, Typography, Button } from '@material-ui/core'
 import { Form, Field } from "react-final-form";
+import emailjs from 'emailjs-com';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -17,6 +18,15 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const onSubmit = async (values) => {
+    //e.preventDefault();
+
+    emailjs.sendForm('smtp.sendgrid.net', 'YOUR_TEMPLATE_ID', JSON.stringify(values, 0, 2), 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
     window.alert(JSON.stringify(values, 0, 2));
 };
 
@@ -32,7 +42,7 @@ export const Contacto = () => {
             </Row>
 
             <Row className="mt-5">
-                <Col className="my-auto">
+                <Col className="my-auto" xs={12} sm={6}>
                     <Row>
                         <Col className="text-center" xs={4}>
                             <LocationOnIcon style={{fontSize: "3rem"}} />
@@ -46,7 +56,7 @@ export const Contacto = () => {
                             <MailOutlineIcon style={{fontSize: "3rem"}}></MailOutlineIcon>
                         </Col>
                         <Col className="my-auto" xs={8}>
-                            <Typography>administracion@dealfs.com.ar</Typography>
+                            <Typography>contacto@dealfs.com.ar</Typography>
                         </Col>
                     </Row>
                     <Row>
@@ -59,7 +69,7 @@ export const Contacto = () => {
                     </Row>
                         
                 </Col>
-                <Col className="my-auto">
+                <Col className="my-auto pt-4" xs={12} sm={6}>
                 <Form
                     onSubmit={onSubmit}
                     render={({ handleSubmit, values }) => (
@@ -85,7 +95,7 @@ export const Contacto = () => {
                         <Row>
                             <Col className="text-center mt-3">
                                 <Button type="submit" className="btn-deal">
-                                    Submit
+                                    Enviar consulta
                                 </Button>
                             </Col>
                         </Row>

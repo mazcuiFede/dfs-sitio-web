@@ -15,7 +15,9 @@ export const Body1 = () => {
             </Row>
             <Row className="mt-5 mb-5 text-center">
                 <Col>
-                    <img src={steps} alt="steps"></img>
+                    <a href="https://aperturadecuenta.dealfs.com.ar/" target="_blank">
+                        <img src={steps} alt="steps" className="w-100"></img>
+                    </a>
                 </Col>
             </Row>
         </Container>

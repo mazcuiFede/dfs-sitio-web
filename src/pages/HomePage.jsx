@@ -15,7 +15,7 @@ export const HomePage = () => {
         <>
             <ImageSlider />
 
-            <TradingViewTicker></TradingViewTicker>
+            <TradingViewTicker />
 
             <Body1></Body1>
 

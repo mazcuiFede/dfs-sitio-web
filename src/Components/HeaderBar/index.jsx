@@ -11,6 +11,7 @@ import Slide from '@material-ui/core/Slide';
 import ButtonHeader from '../elements/ButtonHeader';
 import menuMock from '../../__mocks__/menu';
 import { Link } from "react-router-dom";
+import { MobileButtons } from '../elements';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -43,7 +44,7 @@ export default function HeaderBar(props) {
         <AppBar color="default">
           <Toolbar>
             <Container>
-              <Row className="header">
+              <Row className="header d-none d-sm-flex">
                 <Col xs={4}>
                   <img src={logo} alt="" className="h-100p p-1" />
                 </Col>
@@ -58,6 +59,14 @@ export default function HeaderBar(props) {
                   }
                   <Link to="/contacto"><Button variant="outlined" color="primary" className="ml-2">Ingresar</Button></Link>
                   <a href={"https://aperturadecuenta.dealfs.com.ar/"} target="_blank"><Button className="btn-deal ml-2">Abrir Cuenta</Button></a>
+                </Col>
+              </Row>
+              <Row className="header d-sm-none">
+                <Col>
+                  <img src={logo} alt="" className="h-100p p-1" />
+                </Col>
+                <Col className="my-auto text-right">
+                  <MobileButtons />
                 </Col>
               </Row>
             </Container>

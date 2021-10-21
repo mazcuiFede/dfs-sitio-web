@@ -4,10 +4,12 @@ import TextCard from './TextCard'
 import BioCard from './BioCard'
 import ButtonHeader from './ButtonHeader'
 import SimpleAccordion from './SimpleAccordion'
+import LinkSimpleCard from './LinkSimpleCard'
 import RentaFijaAccordion from './rentaFija/RentaFijaAccordion'
 import FondoDetalleTable from './rentaFija/FondoDetalleTable'
 import FondoDescripcionTable from './rentaFija/FondoDescripcionTable'
 import ScrollToTop from './ScrollToTop'
+import MobileButtons from './menuButtons/mobileButtons'
 
 export { 
     SimpleCard, 
@@ -19,5 +21,7 @@ export {
     RentaFijaAccordion,
     FondoDetalleTable,
     FondoDescripcionTable,
-    ScrollToTop
+    ScrollToTop,
+    LinkSimpleCard,
+    MobileButtons
 };

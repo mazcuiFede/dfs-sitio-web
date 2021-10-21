@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button } from '@material-ui/core'
 import { SimpleCard } from '../../../elements'
 import minibar from '../../../../images/minibar.png'
+import { Link } from 'react-router-dom'
+
 
 export const Servicios = () => {
     return (
@@ -31,7 +33,9 @@ export const Servicios = () => {
                     </Row>
                     <Row className="mt-5 mb-5 text-center">
                         <Col>
-                            <Button className="btn-deal">Contáctenos</Button>
+                            <Link to="/contacto">
+                                <Button className="btn-deal">Contáctenos</Button>
+                            </Link>
                         </Col>
                     </Row>
                 </Container>

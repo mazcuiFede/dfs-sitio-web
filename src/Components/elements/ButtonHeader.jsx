@@ -48,7 +48,7 @@ export default function ButtonHeader(props) {
   }, [open]);
 
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction="row" spacing={2} style={{display: "inline"}}>
         <Button
           ref={anchorRef}
           id="composition-button"
@@ -90,7 +90,10 @@ export default function ButtonHeader(props) {
                         >
                             {
                                 subItems.map(x => {
-                                    return  <MenuItem onClick={handleClose}><Link to={x.link} className="menu-subitem"><LabelImportantIcon /> <span style={{marginLeft:"10px"}}>{x.title} </span></Link></MenuItem>
+                                  if(x.link.includes("http"))
+                                    return <MenuItem onClick={handleClose}><a href={x.link} target="_blank" className="menu-subitem"><LabelImportantIcon /> <span style={{marginLeft:"10px"}}>{x.title} </span></a> </MenuItem>
+                                  else
+                                    return <MenuItem onClick={handleClose}><Link to={x.link} className="menu-subitem"><LabelImportantIcon /> <span style={{marginLeft:"10px"}}>{x.title} </span></Link></MenuItem>
                                 })
                             }
                             

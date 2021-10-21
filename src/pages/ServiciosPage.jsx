@@ -33,12 +33,13 @@ const renderBody = param => {
 }
 
 export const ServiciosPage = props => {
-    const [servicio, setServicio] = useState()
+    
+  const [servicio, setServicio] = useState()
 
     useEffect(() => {
         setServicio(props.match.params.servicio.toLowerCase())
 
-    }, [])
+    }, [props.match.params.servicio])
 
     return (
         <>
