@@ -14,32 +14,17 @@ const menuMock = [
         title: "Servicios",
         link: "",
         subItems: [
-            // {
-            //     title: "Asesoramiento Personalizado",
-            //     link: "/contacto"
-            // },
             {
                 title: "Asset Management",
                 link: "/servicios/asset-management"
             },
-            // {
-            //     title: "Sales & Trading",
-            //     link: "/contacto"
-            // },
-            // {
-            //     title: "Financiamiento para Empresas",
-            //     link: ""
-            // },
             {
                 title: "Apertura de Cuenta",
                 link: "https://aperturadecuenta.dealfs.com.ar/"
             },
-            // {
-            //     title: "Research / Informes",
-            //     link: ""
-            // },
         ]
     },
+    
     {
         title: "Productos",
         link: "/nuestrosproductos",
@@ -47,6 +32,24 @@ const menuMock = [
             {
                 title: "",
                 link: ""
+            },
+        ]
+    },
+    {
+        title: "Trading Tools",
+        link: "",
+        subItems: [
+            {
+                title: "Graficador",
+                link: "/trading-tools/graficador"
+            },
+            {
+                title: "Criptomonedas",
+                link: "/trading-tools/crypto"
+            },
+            {
+                title: "Cotizaciones",
+                link: "/trading-tools/cotizaciones"
             },
         ]
     },

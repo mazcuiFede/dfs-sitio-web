@@ -6,6 +6,7 @@ import { NosotrosPage } from './pages/NosotrosPage'
 import { NuestrosProductosPage } from './pages/NuestrosProductosPage'
 import { InstrumentosPage} from './pages/InstrumentosPage'
 import { ServiciosPage } from './pages/ServiciosPage'
+import { TradingToolsPage } from './pages/TradingToolsPage'
 import { ContactoPage } from './pages/ContactoPage'
 
 
@@ -31,6 +32,10 @@ function App() {
               <Route exact path="/nuestrosproductos" component={NuestrosProductosPage}></Route>
               <Route exact path="/instrumentos/:descripcion" component={InstrumentosPage}></Route>
               <Route exact path="/servicios/:servicio" component={ServiciosPage} />
+
+              <Route exact path="/trading-tools/:tool" component={TradingToolsPage} />
+
+
               <Route exact path="/contacto" component={ContactoPage} />
             </Switch>
           

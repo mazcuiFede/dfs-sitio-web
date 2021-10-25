@@ -4,7 +4,6 @@ import { Typography, Button } from '@material-ui/core'
 import { Container, Row, Col } from 'react-bootstrap'
 import { LinkSimpleCard, SimpleCard } from '../elements';
 import ViewModuleIcon from '@mui/icons-material/ViewModule';
-import { Link } from 'react-router-dom'
 
 export default function AssetManagement () {
     return (

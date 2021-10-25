@@ -84,7 +84,7 @@ li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
     background-color: var(--light-blue) !important;
     border-color: var(--light-blue) !important;
     box-shadow: none;
-    color: #fff
+    color: #fff !important
 }
 
 .bg-white li{
@@ -92,7 +92,7 @@ li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
 }
 
 .title{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .title .title__text{
