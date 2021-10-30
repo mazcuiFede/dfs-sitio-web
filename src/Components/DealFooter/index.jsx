@@ -27,23 +27,23 @@ export const DealFooter = () => {
                     <Col xs={12} sm={3}>
                         <Typography paragraph={true}>Productos</Typography>
                         <ul>
-                            <li>Asset Management</li>
-                            <li>Brokerage</li>
-                            <li>Contacto</li>
-                            <li>DFS Renta Fija Pesos</li>
-                            <li>FCI abierto pymes</li>
-                            <li>Hechos Relevantes</li>
+                            <li><Link to="/servicios/asset-management">Asset Management</Link></li>
+                            {/* <li>Brokerage</li> */}
+                            <li><Link to="/contacto">Contacto</Link></li>
+                            <li><Link to="/servicios/renta-fija">DFS Renta Fija Pesos</Link></li>
+                            <li><Link to="instrumentos/fci">FCI abierto pymes</Link></li>
+                            {/* <li>Hechos Relevantes</li> */}
                         </ul>
                     </Col>
 
                     <Col xs={12} sm={3}>
                         <Typography paragraph={true}>Páginas</Typography>
                         <ul>
-                            <li>Home</li>
-                            <li>Servicios</li>
-                            <li>Productos</li>
-                            <li>Nosotros</li>
-                            <li>Contacto</li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/servicios/asset-management">Servicios</Link></li>
+                            <li><Link to="/nuestrosproductos">Productos</Link></li>
+                            <li><Link to="/nosotros">Nosotros</Link></li>
+                            <li><Link to="/contacto">Contacto</Link></li>
                         </ul>
                     </Col>
 
@@ -51,7 +51,7 @@ export const DealFooter = () => {
                         <Typography paragraph={true}>Contacto</Typography>
                         <ul>
                             <li>+54 11 5275 6390</li>
-                            <li>contacto@dealfs.com.ar</li>
+                            <li><Link to="/contacto">contacto@dealfs.com.ar</Link></li>
                         </ul>
                         <Divider />
                         <Typography paragraph={true}>

@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FooterBeneficios } from '../Components/footerBeneficios'
-import { Cotizaciones, Crypto, Graficador } from '../Components/TradingTools'
+import { Crypto, Graficador } from '../Components/TradingTools'
+import Cotizaciones from '../Components/TradingTools/Cotizaciones'
 
 const tools = {
     graficador: 'graficador',
@@ -34,7 +35,7 @@ export const TradingToolsPage = props => {
 
     return (
         <>
-          <Container>
+          <Container style={{"height": "450px"}}>
               { renderBody(tool) }
           </Container>
           <FooterBeneficios />

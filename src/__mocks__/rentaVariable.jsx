@@ -93,7 +93,7 @@ export const CoberturaTipoCambioMock = [
                     objetivo: "Obtener un desempeño similar al tipo de cambio oficial. El fondo invierte en una cartera diversificada de títulos públicos y privados que ajusten su capital por la evolución del tipo de cambio oficial, o bien realizando cobertura de las inversiones en pesos a través de futuros de tipo de cambio. Si bien se busca que el fondo tenga una alta correlación con el tipo de cambio, puede no representar una cobertura perfecta.",
                     cartera: "Títulos públicos y privados con cláusula de ajuste al tipo de cambio oficial así como en títulos en pesos de corto plazo con cobertura de futuros de tipo de cambio.",
                     agenteAdministracion: "CMA Asset Management",
-                    agenteCustodia: "Banco de Comafi",
+                    agenteCustodia: "Banco Comafi",
                     linkInforme: "",
                     linkRG: ""
 
