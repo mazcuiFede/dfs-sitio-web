@@ -4,6 +4,14 @@ import { Container, Row, Col } from 'react-bootstrap'
 import instrumentosPageMock from './../__mocks__/instrumentosPages'
 import {Link} from 'react-router-dom'
 import { FooterBeneficios } from '../Components/footerBeneficios';
+import acciones from '../images/instrumentos/acciones.jpg'
+import bonos from '../images/instrumentos/bonos.jpg'
+import cauciones from '../images/instrumentos/cauciones.jpg'
+import cedears from '../images/instrumentos/cedears.jpg'
+import chpd from '../images/instrumentos/chpd.jpg'
+import fci from '../images/instrumentos/fci.jpg'
+import letras from '../images/instrumentos/letras.jpg'
+import pagare_bursatil from '../images/instrumentos/pagare_bursatil.jpg'
 
 export const InstrumentosPage = props => {
 
@@ -14,6 +22,29 @@ export const InstrumentosPage = props => {
 
     }, [])
     
+    const renderImage = param => {
+        switch(param) {
+        case "cauciones":
+            return <img src={cauciones} alt="" className="w-100" />
+        case "chpd":
+            return <img src={chpd} alt="" className="w-100" />
+        case "letras":
+            return <img src={letras} alt="" className="w-100" />
+        case "bonos":
+            return <img src={bonos} alt="" className="w-100" />
+        case "acciones":
+            return <img src={acciones} alt="" className="w-100" />
+        case "cedears":
+            return <img src={cedears} alt="" className="w-100" />
+        case "fci":
+            return <img src={fci} alt="" className="w-100" />
+        case "pagare_bursatil":
+            return <img src={pagare_bursatil} alt="" className="w-100" />
+        default:
+            return <></>;
+        }
+      }
+
 
     return (
         <div className="mt-5">
@@ -26,12 +57,12 @@ export const InstrumentosPage = props => {
             </Container>    
             <Container className="mt-2 mb-5">
                 <Row>
-                    <Col className="my-auto">
+                    <Col className="my-auto" xs={12} sm={6}>
                         <Typography variant="h4" className="card-title-1" paragraph={true}>{instrumento.title}</Typography> 
                         <Typography variant="p">{instrumento.body}</Typography> 
                     </Col>
-                    <Col>
-                        <img src="https://conceptodefinicion.de/wp-content/uploads/2014/05/Imagen-2.jpg" alt="" />
+                    <Col className="my-auto pt-2" xs={12} sm={6}>
+                        { renderImage(instrumento.link) }
                     </Col>
                 </Row>
                 <Row className="mt-5">

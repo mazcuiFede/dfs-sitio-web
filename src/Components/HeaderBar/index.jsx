@@ -44,11 +44,11 @@ export default function HeaderBar(props) {
         <AppBar color="default">
           <Toolbar>
             <Container>
-              <Row className="header d-none d-sm-flex">
-                <Col xs={4}>
-                  <img src={logo} alt="" className="h-100p p-1" />
+              <Row className="header d-none d-lg-flex">
+                <Col xs={2} className="my-auto">
+                  <img src={logo} alt="" className="p-1 w-100" />
                 </Col>
-                <Col className="my-auto text-right" xs={8}>
+                <Col className="my-auto text-right" xs={10}>
                   {
                     menuMock.map(x => {
                       if(x.link)
@@ -61,9 +61,9 @@ export default function HeaderBar(props) {
                   <a href={"https://aperturadecuenta.dealfs.com.ar/"} target="_blank"><Button className="btn-deal ml-2">Abrir Cuenta</Button></a>
                 </Col>
               </Row>
-              <Row className="header d-sm-none">
-                <Col>
-                  <img src={logo} alt="" className="h-100p p-1" />
+              <Row className="header d-lg-none">
+                <Col className="my-auto">
+                  <img src={logo} alt="logo" className="p-1" style={{height: "70px"}} />
                 </Col>
                 <Col className="my-auto text-right">
                   <MobileButtons />

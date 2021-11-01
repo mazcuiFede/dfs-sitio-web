@@ -2,13 +2,13 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button } from '@material-ui/core'
 import minibar from '../../../../images/minibar.png'
-import empresa from '../../../../images/empresa.png'
+import empresa from '../../../../images/sobre_nosotros.jpg'
 
 export const SobreNosotros = () => {
     return (
         <Container fluid>
             <Row className="mt-5 pt-5 text-center">
-                <Col>
+                <Col className="d-none d-sm-flex" >
                     <img src={empresa} alt="" className="w-100" />
                 </Col>
                 <Col className="my-auto">

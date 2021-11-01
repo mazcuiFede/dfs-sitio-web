@@ -3,13 +3,21 @@
     --main-grey: #EBEBEB;
     --title-grey: #efefef;
     --light-blue: #0C64A1;
+    --dark-grey: #777;
+    
 }
 
 @media (min-width: 600px) {
     .carousel-caption{
-        width: 35%;
+        width: 40%;
     }
-  }
+}
+/* 
+@media (max-width: 600px) {
+    .tradingview-widget-container{
+        margin-top:  75px;
+    }
+} */
 
 .ml-2,
 .MuiButtonBase-root.ml-2 {
@@ -25,8 +33,10 @@
 }
 
 .carousel-caption{
-    top: 7rem;
     text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
 }
 
 .dfs-title,
@@ -135,4 +145,8 @@ a {
 
 div.transparent{
     background-color: transparent;
+}
+
+.dark-grey{
+    color: var(--dark-grey)
 }

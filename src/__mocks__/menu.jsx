@@ -22,23 +22,6 @@ const menuMock = [
                 title: "Apertura de Cuenta",
                 link: "https://aperturadecuenta.dealfs.com.ar/"
             },
-        ]
-    },
-    
-    {
-        title: "Productos",
-        link: "/nuestrosproductos",
-        subItems: [
-            {
-                title: "",
-                link: ""
-            },
-        ]
-    },
-    {
-        title: "Trading Tools",
-        link: "",
-        subItems: [
             {
                 title: "Graficador",
                 link: "/trading-tools/graficador"
@@ -50,6 +33,17 @@ const menuMock = [
             {
                 title: "Cotizaciones",
                 link: "/trading-tools/cotizaciones"
+            },
+        ]
+    },
+    
+    {
+        title: "Productos",
+        link: "/nuestrosproductos",
+        subItems: [
+            {
+                title: "",
+                link: ""
             },
         ]
     },

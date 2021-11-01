@@ -13,13 +13,18 @@ export const NosotrosPage = () => {
 
             <Container>
                 <Row>
-                    <Col>
+                    {/* <Col>
                         DFS nació en 2002 con el propósito de acompañar y servir a sus clientes a través un asesoramiento financiero profesional, sólido y transparente, identificando las mejores oportunidades de inversión que brindó el mercado financiero tanto en épocas de expansión económica, como en momentos de incertidumbre y volatilidad financiera en Argentina.
                         Asesoramos a nuestros clientes con el objetivo de mantener y acrecentar sus ahorros. 
                     </Col>
                     <Col>
                         Nos enorgullecemos de abrir una nueva etapa de expansión y crecimiento a partir de 2016, invitando a los clientes individuales y a nuevos segmentos de clientes (instituciones, corporaciones y pymes) a sumarse nuestra propuesta de valor y también ampliando la oferta de servicios y productos financieros.
+                    </Col> */}
+
+                    <Col>
+                    En DFS asesoramos a nuestros clientes con el objetivo de mantener y acrecentar sus ahorros. Deal Financial Services se enorgullece de abrir una etapa de expansión a partir del 2016, ampliando la propuesta de valor para Instituciones, empresas y Pymes.
                     </Col>
+                    
                 </Row>
             </Container>
 

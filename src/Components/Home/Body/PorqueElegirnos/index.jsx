@@ -2,14 +2,14 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Typography, Button } from '@material-ui/core'
 import minibar from './../../../../images/minibar.png'
-import empresa from './../../../../images/empresa.png'
+import empresa from './../../../../images/porque_elegirnos.jpg'
 
 export const PorqueElegirnos = () => {
     return (
         <Container fluid>
             <Row className="mt-5 pt-5 text-center">
                
-                <Col className="my-auto">
+                <Col className="my-auto" xs={12} sm={6}>
                     <Typography>¿Por qué <b>elegirnos</b>?</Typography>
                     <img src={minibar} className="mt-1 mb-5"></img>
 
@@ -17,7 +17,7 @@ export const PorqueElegirnos = () => {
 
                     <Button className="btn-deal">Conocé más</Button>
                 </Col>
-                <Col>
+                <Col className="my-auto pt-3" xs={12} sm={6}>
                     <img src={empresa} alt="" className="w-100" />
                 </Col>
             </Row>
