@@ -19,10 +19,6 @@ const menuMock = [
                 link: "/servicios/asset-management"
             },
             {
-                title: "Apertura de Cuenta",
-                link: "https://aperturadecuenta.dealfs.com.ar/"
-            },
-            {
                 title: "Graficador",
                 link: "/trading-tools/graficador"
             },

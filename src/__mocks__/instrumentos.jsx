@@ -7,7 +7,7 @@ const instrumentosMock = [
     },
     {
     title: "Cheques de Pago Diferido",
-    body: "El tenedor de un cheque de pago diferido que requiera adelantar el cobro del mismo puede descontarlo en el mercado de capitales a cambio de una tasa de interés. De este modo, el tenedor puede financiarse negociando directamente con el comprador.",
+    body: "Los cheques de pago diferido son una orden pago a una fecha futura, que en general no excede el año. El tenedor de un cheque de pago diferido que requiera adelantar el cobro del mismo puede descontarlo en el mercado de capitales a cambio de una tasa de interés.",
     link: "/instrumentos/chpd",
     },
     {
@@ -27,7 +27,7 @@ const instrumentosMock = [
     },
     {
     title: "Cedears",
-    body: "Conviértase en accionista de empresas como Google o Amazon. Los CEDEARs son Certificados de Depósito Argentino, que representan acciones cotizantes en mercados extranjeros, como por ejemplo el NYSE o Nasdaq.",
+    body: "Los CEDEARs son Certificados de Depósito Argentino, que representan acciones cotizantes en mercados extranjeros, como por ejemplo el NYSE o Nasdaq.",
     link: "/instrumentos/cedears",
     },
     {

@@ -29,7 +29,11 @@ export default function BioCard(props) {
         </Typography>
       </CardContent>
       <CardActions className="text-center">
-        <Button size="small"><LinkedInIcon /></Button>
+        <Button size="small">
+          <a href={link}>
+            <LinkedInIcon />
+          </a>
+          </Button>
       </CardActions>
     </Card>
   );

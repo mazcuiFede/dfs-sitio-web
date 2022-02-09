@@ -3,7 +3,7 @@ const instrumentosPageMock = [
     {
         url: "cauciones",
         title: "Cauciones",
-        body: "Los bonos son títulos de deuda, que entidades públicas y privadas emiten con el objeto de obtener financiamiento. Si el emisor es una entidad pública, como el Tesoro Nacional, provincial o agencias del gobierno, se trata de títulos públicos. Si el emisor fuera una entidad privada, se los denomina obligaciones negociables (ON) o bonos corporativos. Los bonos son considerados instrumentos de renta fija, ya que las condiciones de devolución de la deuda así como la de los pagos de intereses son conocidas al momento de la emisión y se detallan en el prospecto. Las condiciones incluyen la moneda de denominación y pago, el plazo o maturity, las fechas y tasas de pago de los intereses y las fechas y formas de amortización, entre otros.",
+        body: "La caución bursátil es un préstamo a muy corto plazo de entre 1 y 120 días. A diferencia de un préstamo bancario, en la caución no hay intermediarios y los tomadores y los colocadores interactúan en el mercado para concertar la operación. De este modo, puede verse como una opción de financiamiento (tomadora) o una inversión similar al plazo fijo (colocadora). En este último caso, la ventaja radica en que los plazos pueden ser tan cortos como 1 día proveyendo mayor liquidez. Se trata de una inversión conservadora ya que el tomador del préstamo deberá dejar títulos en garantía.  Las cauciones se concertan a tasa fija en pesos o dólares.",
         link: "cauciones",
     },
     {
@@ -15,13 +15,13 @@ const instrumentosPageMock = [
     {
         url: "letras",
         title: "Letras",
-        body: "Las letras son instrumentos de deuda tal como los bonos pero de menor plazo, en general inferior al año. Por su corto plazo, muchas letras son emitidas como cupón cero, se emitan a un precio a descuento y pagan amortización e interés al vencimiento.",
+        body: "Las letras son instrumentos de deuda tal como los bonos pero de menor plazo, en general inferior al año. Por su corto plazo, muchas letras son emitidas como cupón cero, se emiten a un precio a descuento y pagan amortización e interés al vencimiento.",
         link: "letras",
     },
     {
         url: "bonos",
         title: "Bonos",
-        body: "Los bonos son considerados instrumentos de renta fija, ya que las condiciones de devolución de la deuda así como la de los pagos de intereses son conocidas al momento de la emisión y se detallan en el prospecto.",
+        body: "Los bonos son títulos de deuda, que entidades públicas y privadas emiten con el objeto de obtener financiamiento. Si el emisor es una entidad pública, como el Tesoro Nacional, provincial o agencias del gobierno, se trata de títulos públicos. Si el emisor fuera una entidad privada, se los denomina obligaciones negociables (ON) o bonos corporativos. Los bonos son considerados instrumentos de renta fija, ya que las condiciones de devolución de la deuda así como la de los pagos de intereses son conocidas al momento de la emisión y se detallan en el prospecto. Las condiciones incluyen la moneda de denominación y pago, el plazo o maturity, las fechas y tasas de pago de los intereses y las fechas y formas de amortización, entre otros.",
         link: "bonos",
     },
     {

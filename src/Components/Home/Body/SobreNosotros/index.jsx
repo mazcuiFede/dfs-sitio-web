@@ -15,7 +15,7 @@ export const SobreNosotros = () => {
                     <Typography>Sobre <b>nosotros</b></Typography>
                     <img src={minibar} className="mt-1 mb-5"></img>
 
-                    <Typography paragraph={true}>DFS acompaña a sus clientes a través de un asesoramiento financiero profesional, sólido y transparente, identificando las mejores oportunidades de inversión y financiamiento.</Typography>
+                    <Typography paragraph={true}>En DFS asesoramos a nuestros clientes con el objetivo de mantener y acrecentar sus ahorros. Deal Financial Services se enorgullece de abrir una etapa de expansión a partir del 2016, ampliando la propuesta de valor para Instituciones, empresas y Pymes.</Typography>
 
                     <Button className="btn-deal">Conocé más</Button>
                 </Col>
