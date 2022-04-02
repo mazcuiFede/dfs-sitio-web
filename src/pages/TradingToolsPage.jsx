@@ -1,18 +1,17 @@
-import React, {useEffect, useState} from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { FooterBeneficios } from '../Components/footerBeneficios'
-import { Crypto, Graficador } from '../Components/TradingTools'
-import Cotizaciones from '../Components/TradingTools/Cotizaciones'
+import React, { useEffect, useState } from "react"
+import { Container } from "react-bootstrap"
+import { FooterBeneficios } from "../Components/footerBeneficios"
+import { Crypto, Graficador } from "../Components/TradingTools"
+import Cotizaciones from "../Components/TradingTools/Cotizaciones"
 
 const tools = {
-    graficador: 'graficador',
-    cotizaciones: 'cotizaciones',
-    crypto: 'crypto'
-
+  graficador: "graficador",
+  cotizaciones: "cotizaciones",
+  crypto: "crypto",
 }
 
-const renderBody = param => {
-  switch(param) {
+const renderBody = (param) => {
+  switch (param) {
     case tools.graficador:
       return <Graficador />
     case tools.cotizaciones:
@@ -20,26 +19,21 @@ const renderBody = param => {
     case tools.crypto:
       return <Crypto />
     default:
-      return <></>;
+      return <></>
   }
 }
 
-export const TradingToolsPage = props => {
-    
+export const TradingToolsPage = (props) => {
   const [tool, setTool] = useState()
 
-    useEffect(() => {
-      setTool(props.match.params.tool.toLowerCase())
+  useEffect(() => {
+    setTool(props.match.params.tool.toLowerCase())
+  }, [props.match.params.tool])
 
-    }, [props.match.params.tool])
-
-    return (
-        <>
-          <Container style={{"height": "450px"}}>
-              { renderBody(tool) }
-          </Container>
-          <FooterBeneficios />
-            
-        </>
-    )
+  return (
+    <>
+      <Container>{renderBody(tool)}</Container>
+      <FooterBeneficios />
+    </>
+  )
 }

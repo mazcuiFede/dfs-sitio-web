@@ -1,16 +1,15 @@
 :root {
-    --main-green: #39B54A;
-    --main-grey: #EBEBEB;
-    --title-grey: #efefef;
-    --light-blue: #0C64A1;
-    --dark-grey: #777;
-    
+  --main-green: #39b54a;
+  --main-grey: #ebebeb;
+  --title-grey: #efefef;
+  --light-blue: #0c64a1;
+  --dark-grey: #777;
 }
 
 @media (min-width: 600px) {
-    .carousel-caption{
-        width: 40%;
-    }
+  .carousel-caption {
+    width: 40%;
+  }
 }
 /* 
 @media (max-width: 600px) {
@@ -21,132 +20,155 @@
 
 .ml-2,
 .MuiButtonBase-root.ml-2 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-
-.mb-auto, .my-auto {
-    margin-bottom: auto!important;
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
 }
-.mt-auto, .my-auto {
-    margin-top: auto!important;
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
 }
 
-.carousel-caption{
-    text-align: left;
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial;
+.carousel-caption {
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
 }
 
 .dfs-title,
-.MuiTypography-body1.dfs-title{
-    font-size: 2rem;
+.MuiTypography-body1.dfs-title {
+  font-size: 2rem;
 }
 
 .bg-grey {
-    background-color: var(--main-grey);
+  background-color: var(--main-grey);
 }
 
 .menu-subitem {
-    color: #000;
+  color: #000;
 }
 .menu-subitem li:hover a {
-    color: #fff
+  color: #fff;
 }
 
 .MuiButton-text.btn-deal,
 .MuiButton-text.btn-deal:hover {
-    background-color: var(--main-green);
-    color: #FFF
+  background-color: var(--main-green);
+  color: #fff;
 }
 
-
-.title-2{
-    color: #FFF;
-    font-size: 1.5rem
+.title-2 {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-.text-right{
-    text-align: right;
+.text-right {
+  text-align: right;
 }
 
-.h-100p{
-    height: 100px;
-
+.h-100p {
+  height: 100px;
 }
 
 .btn-header-alto,
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto,
 .header a.inline button {
-    color: #000;
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
-    border-radius: 0px;
+  color: #000;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  border-radius: 0px;
 }
 
 .btn-header-alto:hover,
 .btn-header-alto:active,
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:hover,
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:active,
-li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover
-{
-    background-color: var(--light-blue) !important;
-    border-color: var(--light-blue) !important;
-    box-shadow: none;
-    color: #fff !important
+li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+  background-color: var(--light-blue) !important;
+  border-color: var(--light-blue) !important;
+  box-shadow: none;
+  color: #fff !important;
 }
 
-.bg-white li{
-    background-color: #f5f5f5
+.bg-white li {
+  background-color: #f5f5f5;
 }
 
-.title{
-    margin-bottom: 10px;
-}
-
-.title .title__text{
-    padding: 40px;
+.title .title__text {
+  padding: 40px;
 }
 
 .card-title-1,
 p.blue-text,
+.blue-text,
 .MuiTypography-body1.card-title-1,
-.blue-text th{
-    color: var(--light-blue);
-    font-weight: bold;
+.blue-text th {
+  color: var(--light-blue);
+  font-weight: bold;
 }
 
 .blue .MuiTypography-body1.card-title-1,
 .MuiPaper-root.blue,
 .blue .MuiButton-root {
-    background-color: var(--light-blue);
-    color: #fff;
+  background-color: var(--light-blue);
+  color: #fff;
 }
 
 div.css-e53awj-MuiStack-root,
 .header a.inline div {
-    display: inline;
+  display: inline;
 }
 
-.deal-footer{
-    background-color: #333333;
-    color: white;
+.deal-footer {
+  background-color: #333333;
+  color: white;
 }
 
-.white{
-    color: white;
+.white {
+  color: white;
 }
 
 .MuiToolbar-root a,
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-div.transparent{
-    background-color: transparent;
+div.transparent {
+  background-color: transparent;
 }
 
-.dark-grey{
-    color: var(--dark-grey)
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+p.blue-title {
+  color: var(--light-blue);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.float-right {
+  float: right;
+}
+
+.bg-grey {
+  background-color: var(--main-grey);
+}
+
+.MuiCardActionArea-root {
+  cursor: default;
+}
+
+button.mw-110 {
+  min-width: 110px;
+}
+
+.title-grey {
+  background-color: #e5e5e5;
+  padding: 30px;
+  margin-bottom: 35px;
 }

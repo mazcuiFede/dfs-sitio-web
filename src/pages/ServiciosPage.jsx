@@ -1,53 +1,55 @@
-import React, {useEffect, useState} from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { FooterBeneficios } from '../Components/footerBeneficios'
-import { AdministracionDeCarteras, RentaFija, RentaVariable, Liquidez, AssetManagement, Fondos } from './../Components/Servicios'
+import React, { useEffect, useState } from "react"
+import { FooterBeneficios } from "../Components/footerBeneficios"
+import { Servicios } from "../Components/Home/Body/Servicios"
+import {
+  AdministracionDeCarteras,
+  RentaFija,
+  RentaVariable,
+  Liquidez,
+  AssetManagement,
+  Fondos,
+} from "./../Components/Servicios"
 
 const servicios = {
-    administracionDeCarteras: 'administracion-de-carteras',
-    assetManagement: 'asset-management',
-    rentaFija: 'renta-fija',
-    rentaVariable: 'renta-variable',
-    liquidez: 'liquidez',
-    fondos: 'fondos'
-
+  administracionDeCarteras: "administracion-de-carteras",
+  assetManagement: "asset-management",
+  rentaFija: "renta-fija",
+  rentaVariable: "renta-variable",
+  liquidez: "liquidez",
+  fondos: "fondos",
 }
 
-const renderBody = param => {
-  switch(param) {
+const renderBody = (param) => {
+  if (param === undefined) return <Servicios />
+  switch (param) {
     case servicios.administracionDeCarteras:
-      return <AdministracionDeCarteras />;
+      return <AdministracionDeCarteras />
     case servicios.rentaFija:
-      return <RentaFija />;
+      return <RentaFija />
     case servicios.rentaVariable:
-      return <RentaVariable />;
+      return <RentaVariable />
     case servicios.liquidez:
-      return <Liquidez />;
+      return <Liquidez />
     case servicios.assetManagement:
-      return <AssetManagement />;
+      return <AssetManagement />
     case servicios.fondos:
-      return <Fondos />;
+      return <Fondos />
     default:
-      return <></>;
+      return <></>
   }
 }
 
-export const ServiciosPage = props => {
-    
+export const ServiciosPage = (props) => {
   const [servicio, setServicio] = useState()
 
-    useEffect(() => {
-        setServicio(props.match.params.servicio.toLowerCase())
+  useEffect(() => {
+    setServicio(props.match.params.servicio?.toLowerCase())
+  }, [props.match.params.servicio])
 
-    }, [props.match.params.servicio])
-
-    return (
-        <>
-          <Container>
-              { renderBody(servicio) }
-          </Container>
-          <FooterBeneficios />
-            
-        </>
-    )
+  return (
+    <>
+      {renderBody(servicio)}
+      <FooterBeneficios />
+    </>
+  )
 }
