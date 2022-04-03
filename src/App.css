@@ -84,10 +84,7 @@
 }
 
 .btn-header-alto:hover,
-.btn-header-alto:active,
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:hover,
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root.btn-header-alto:active,
-li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+.btn-header-alto:active {
   background-color: var(--light-blue) !important;
   border-color: var(--light-blue) !important;
   box-shadow: none;
@@ -96,6 +93,10 @@ li.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
 
 .bg-white li {
   background-color: #f5f5f5;
+}
+
+.bg-white li:hover {
+  background-color: var(--light-blue) !important;
 }
 
 .title .title__text {

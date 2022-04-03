@@ -17,9 +17,9 @@ export const FooterBeneficios = () => {
             </Col>
           </Row>
           <Row>
-            {beneficiosMock.map((x) => (
-              <Col xs={12} sm>
-                <SimpleCard height={290} icon={true} title={x.title}>
+            {beneficiosMock.map((x, i) => (
+              <Col xs={12} sm key={i}>
+                <SimpleCard icon={true} height={290} title={x.title}>
                   {x.body}
                 </SimpleCard>
               </Col>
