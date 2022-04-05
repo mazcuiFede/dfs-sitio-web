@@ -61,6 +61,10 @@
   color: #fff;
 }
 
+.title {
+  background-color: #f7f7f7;
+}
+
 .title-2 {
   color: #fff;
   font-size: 1.5rem;
@@ -172,4 +176,12 @@ button.mw-110 {
   background-color: #e5e5e5;
   padding: 30px;
   margin-bottom: 35px;
+}
+
+.border-blue {
+  border: 1px solid #0c64a1;
+}
+
+button.MuiCardActionArea-root {
+  cursor: default !important;
 }

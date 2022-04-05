@@ -7,15 +7,15 @@ import { SimpleCard } from "../Components/elements"
 export const FooterBeneficios = () => {
   return (
     <>
-      <Container fluid className="title mt-5 pb-4 bg-grey">
+      <Row>
+        <Col className="text-center">
+          <Title>
+            <b>Beneficios</b> de operar con nosotros
+          </Title>
+        </Col>
+      </Row>
+      <Container fluid className="title pt-3 pb-4 bg-grey">
         <Container>
-          <Row>
-            <Col className="text-center">
-              <Title>
-                <b>Beneficios</b> de operar con nosotros
-              </Title>
-            </Col>
-          </Row>
           <Row>
             {beneficiosMock.map((x, i) => (
               <Col xs={12} sm key={i}>

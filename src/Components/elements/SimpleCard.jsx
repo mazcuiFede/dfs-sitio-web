@@ -6,10 +6,10 @@ import ViewModuleIcon from "@mui/icons-material/ViewModule"
 import Typography from "@material-ui/core/Typography"
 
 export default function SimpleCard(props) {
-  const { title, body, children, color, icon, link, height } = props
+  const { title, body, children, color, icon, link, height, style } = props
 
   return (
-    <Card className={color}>
+    <Card className={color} style={style}>
       <CardActionArea href={link} style={{ height }}>
         <CardContent>
           {icon ? (

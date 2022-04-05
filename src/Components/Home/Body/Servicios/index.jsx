@@ -22,6 +22,7 @@ export const Servicios = () => {
           <Row className="mt-5 mb-5">
             <Col xs={12} sm={6} xl={3} className="pt-3">
               <SimpleCard
+                color={"border-blue"}
                 icon={false}
                 height={290}
                 title="Asesoramiento Personalizado"
@@ -30,6 +31,7 @@ export const Servicios = () => {
             </Col>
             <Col xs={12} sm={6} xl={3} className="pt-3">
               <SimpleCard
+                color={"border-blue"}
                 height={290}
                 icon={false}
                 title="Asset Management"
@@ -38,6 +40,7 @@ export const Servicios = () => {
             </Col>
             <Col xs={12} sm={6} xl={3} className="pt-3">
               <SimpleCard
+                color={"border-blue"}
                 height={290}
                 icon={false}
                 title="Sales & Trading"
@@ -46,6 +49,7 @@ export const Servicios = () => {
             </Col>
             <Col xs={12} sm={6} xl={3} className="pt-3">
               <SimpleCard
+                color={"border-blue"}
                 height={290}
                 icon={false}
                 title="Financiamiento para empresas"
