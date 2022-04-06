@@ -9,6 +9,7 @@ import {
   AssetManagement,
   Fondos,
 } from "./../Components/Servicios"
+import { Container } from "react-bootstrap"
 
 const servicios = {
   administracionDeCarteras: "administracion-de-carteras",
@@ -48,7 +49,7 @@ export const ServiciosPage = (props) => {
 
   return (
     <>
-      {renderBody(servicio)}
+      <Container>{renderBody(servicio)}</Container>
       <FooterBeneficios />
     </>
   )
